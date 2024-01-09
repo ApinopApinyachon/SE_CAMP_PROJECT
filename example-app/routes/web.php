@@ -1,7 +1,6 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +11,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::post('/multiplication_table', function (Request $req) {
+    $data['inputNumber'] = $req->input('inputNumber');
+    return view('multiplication_table', $data);
 });
