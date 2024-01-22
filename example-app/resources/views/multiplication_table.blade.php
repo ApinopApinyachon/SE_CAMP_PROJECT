@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@800&family=Bungee+Spice&family=Itim&family=Libre+Franklin:wght@100;300&family=Noto+Sans+Cypro+Minoan&family=Poppins:wght@800&family=Roboto+Mono:wght@300&family=Victor+Mono:ital,wght@1,700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,7 +15,8 @@
     <div class=container>
 
         <div class=h1div>
-            <h1>ตารางสูตรคูณแม่ <?php echo $inputNumber; ?></h1>
+            <h1>ตารางสูตรคูณแม่ <?php echo $inputNumber;
+            echo $rachapro; ?></h1>
         </div>
 
         <div class="container-table">

@@ -20,16 +20,17 @@
             <h1>แม่สูตรคูณ</h1>
         </div>
 
+
         <div class=input>
             <form method="post" action="/multiplication_table">
                 @csrf
                 <div class=butt>
                     <input type="number" name="inputNumber" placeholder="กรุณากรอกเลข">
-
                     <button class="button-31" role="button">ยืนยัน</button>
                 </div>
+            </form>
         </div>
-        </form>
+
     </div>
 
     </div>

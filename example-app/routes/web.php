@@ -14,11 +14,13 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/home', function () {
     return view('home');
 });
 
 Route::post('/multiplication_table', function (Request $req) {
     $data['inputNumber'] = $req->input('inputNumber');
+    $data['rachapro'] = 20;
     return view('multiplication_table', $data);
 });
